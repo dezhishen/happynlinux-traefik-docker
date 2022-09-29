@@ -1,5 +1,8 @@
 # happynlinux-traefik-docker
 本项目用于构建 happyn和traefik二合一的docker镜像,方便网络隔离时使用
+## 依赖项目
+- https://github.com/happynclient/happynlinux
+- https://github.com/traefik/traefik
 ## 构建镜像
 ```
 docker build . -t dezhishen/happynlinux-traefik
