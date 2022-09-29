@@ -1,1 +1,1 @@
-# happynlinux-traefik-wireguard-docker
+# happynlinux-traefik-docker
