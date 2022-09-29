@@ -19,7 +19,7 @@ RUN apt update && apt install tzdata -y && \
 EXPOSE 80
 ARG HAPPYNET_VERSION=1.0
 ARG TRAEFIK_VERSION=v2.8.7
-LABEL HAPPYNET_VERSION=${HAPPYNET_VERSION} TRAEFIK_VERSION=${TRAEFIK_VERSION}
+LABEL "happynet.version"=${HAPPYNET_VERSION} "traefik.version"=${TRAEFIK_VERSION}
 COPY --from=happynet-builder /builder/happynet /usr/bin/
 COPY --from=traefik-builer /builder/traefik /usr/bin/
 COPY --from=traefik-builer /builder/ca-certificates.crt /etc/ssl/certs/
